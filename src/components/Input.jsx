@@ -6,13 +6,13 @@ export default function Input({ submitHandle }){
 
    const onChangeText = (text) => {
       setValue(text);
-   }
+   };
 
    const handleAddHabit = () => {
       setValue(submitHandle(value));
       setValue("");
       Keyboard.dismiss();
-   }
+   };
 
    return(
       <View>
